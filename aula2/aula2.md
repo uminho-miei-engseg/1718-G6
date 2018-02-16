@@ -29,14 +29,14 @@ O exemplo mais ilustrativo aplica-se nas situações de trabalho profissional.
 ##### Cifrar
 ```
 segredo = cifra(mensagem, chave_cifra); // chave privada dia.mes.ano
-etiqueta = hmac(HMAC_SHA_256_key, segredo);
+etiqueta = HMAC_SHA256(mac_key, segredo);
 send(segredo:etiqueta);
 ```
 ##### Decifrar
 ```
 recieve(cifrado);
 etiqueta, mensage_cifrada = separa(cifrado) // separa através do tamanho fixo do HMAC_256
-if (hmac(HMAC_SHA_256, mensagem_cifrada) == etiqueta)
+if (HMAC_SHA256(mac_key, mensagem_cifrada) == etiqueta)
 	decifra(mensagem_cifrada, chave_cifra);
 else
 	erro;
