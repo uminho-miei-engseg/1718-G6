@@ -43,7 +43,7 @@ else
 ```
 ## Incompleto
 ### Questão 4
-Das três entidades de certificação de confiança da Lituânia que disponibilizam serviços de “QCert for ESig”, duas destas usam o algoritmo de hash SHA256 e RSA, com chaves de 2048 bits, nos certificados mais recentes. 
+Das três entidades de certificação de confiança da Lituânia que disponibilizam serviços de “QCert for ESig”, duas destas usam o algoritmo de hash SHA256 para assinar digitalmente o conteúdo dos certificados e o algoritmo de cifra RSA, com chaves de 2048 bits (normalmente é utilizado numa fase de handshake para atribuir uma chave de sessão para um algoritmo de chave simétrica), nos certificados mais recentes. 
 - ADIC_Qualified certificates for electronic signature-2 (ADIC CA-A)
 - SSC_Qualified certificates for electronic signature-6 (SSC GDL VS Class 2-4 QCA)
 
