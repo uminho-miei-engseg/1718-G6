@@ -2,6 +2,12 @@
 
 ### Questão 1
 
+#### 1.1
+Na execução do primeiro comando  ```head -c 1024 /dev/random | openssl enc -base64```, é necessário criar entropia de forma a que sejam gerados os 1024 bytes pseudoaleatórios. Esta entropia baseia-se em eventos, como por exemplo, o mover do cursor. No segundo comando ```head -c 1024 /dev/urandom | openssl enc -base64```, já não é necessário criar entropia pois a aplicação *urandom* utiliza uma pool interna para produzir mais bits pseudoaleatórios.
+
+#### 1.2
+A execução dos dois comandos é similar. A única diferença é que o programa *random* já não necessita de eventos maiores de entropia, como por exemplo o mover do cursor. Este efeito é conseguido com recurso aos efeitos indiretos de eventos no hardware (estados escondidos do processador - caches, branch predictors, memory translation tables, etc).
+
 #### 1.3
 Para responder à questão é melhor proceder à explicação do comportamento da função de geração. Assim, o algoritmo consiste em dois ciclos. O ciclo exterior executa enquanto que o segredo a construir não possua o tamanho pretendido (passado como argumento). Dentro deste ciclo é invocada uma função para gerar dados aleatórios, do módulo *utils* do *python*. Contudo, inicia-se um segundo ciclo para escolher, desses dados aleatórios, apenas os caracteres que correspondem a letras (*ASCII_letters*) ou a dígitos (*string_digits*).
 
