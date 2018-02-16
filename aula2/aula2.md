@@ -41,18 +41,20 @@ if (HMAC_SHA256(mac_key, mensagem_cifrada) == etiqueta)
 else
 	erro;
 ```
-## Incompleto
+
 ### Questão 4
-Das três entidades de certificação de confiança da Lituânia que disponibilizam serviços de “QCert for ESig”, duas destas usam o algoritmo de hash SHA256 para assinar digitalmente o conteúdo dos certificados e o algoritmo de cifra RSA, com chaves de 2048 bits (normalmente é utilizado numa fase de handshake para atribuir uma chave de sessão para um algoritmo de chave simétrica), nos certificados mais recentes. 
+Das três entidades de certificação de confiança da Lituânia que disponibilizam serviços de “QCert for ESig”, duas destas usam o algoritmo SHA256 (função de hash criptográfica) para assinar digitalmente o conteúdo dos certificados e o algoritmo de chave pública RSA com chaves de 2048 bits (normalmente é utilizado numa fase de handshake para atribuir uma chave de sessão para um algoritmo de chave simétrica). 
+
 - ADIC_Qualified certificates for electronic signature-2 (ADIC CA-A)
 - SSC_Qualified certificates for electronic signature-6 (SSC GDL VS Class 2-4 QCA)
 
 Para estes casos a segurança fornecida pelos algoritmos é a recomendada atualmente.
 
-A terceira entidade, usa o algoritmo de hash SHA1 e RSA, com chaves de 2048 bits.
+A terceira entidade, usa oo algoritmos SHA1 e RSA com chaves de 2048 bits.
+
 - RC_Qualified certificates for electronic signature-5
 
-Neste caso o algoritmo de hash atualmente já não é considerado seguro pela BSI (Alemanha), sendo aconselhado no mínimo o SHA256.
+Neste caso, o algoritmo utilizado atualmente para a assinatura (SHA1) já não é considerado seguro pela BSI (Alemanha), sendo aconselhado no mínimo o SHA256.
 
 
 
