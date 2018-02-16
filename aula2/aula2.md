@@ -41,3 +41,5 @@ if (hmac(HMAC_SHA_256, mensagem_cifrada) == etiqueta)
 else
 	erro;
 ```
+
+### Questão 4
