@@ -43,6 +43,16 @@ else
 ```
 ## Incompleto
 ### Questão 4
-Algoritmo de assinatura: SHA256
-Chave pública: RSA
+Das três entidades de certificação de confiança da Lituânia que disponibilizam serviços de “QCert for ESig”, duas das quais estão associadas ao Ministério da Administração interna da Lituânia “Identity Documents Personalisation Centre under the Ministry of the Interior” e a terceira foi escolhida entre as entidades associadas a empresas do estado.
+
+As duas entidades de certificação associadas ao Ministério da Administração interna, 
+são os seguintes:
+- ADIC_Qualified certificates for electronic signature-1 (ADIC CA-A)
+- ADIC_Qualified certificates for electronic signature-2 (ADIC CA-B)
+
+A terceira entidade, associada a uma empresa do estado é:
+- RC_Qualified certificates for electronic signature
+
+Todas as três entidades usam o algoritmo de hash SHA256 com RSA, com chaves de 2048bits.
+
 
