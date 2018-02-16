@@ -41,5 +41,8 @@ if (hmac(HMAC_SHA_256, mensagem_cifrada) == etiqueta)
 else
 	erro;
 ```
-
+## Incompleto
 ### Questão 4
+Algoritmo de assinatura: SHA256
+Chave pública: RSA
+
