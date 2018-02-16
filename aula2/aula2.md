@@ -30,7 +30,7 @@ O exemplo mais ilustrativo aplica-se nas situações de trabalho profissional.
 ```
 segredo = cifra(mensagem, chave_cifra); // chave privada dia.mes.ano
 etiqueta = HMAC_SHA256(mac_key, segredo);
-send(segredo:etiqueta);
+send(etiqueta:segredo);
 ```
 ##### Decifrar
 ```
