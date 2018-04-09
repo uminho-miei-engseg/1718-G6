@@ -32,4 +32,4 @@ As principais diferenças entre vulnerabilidades dia-zero de outro tipo de vulne
 
 Outra diferença óbvia centra-se claro no próprio nome, uma vulnerabilidade denomina-se de dia-zero por ter sido descoberta nesse dia, enquanto que uma vulnerabilidade que tenha sido descoberta há 30 dias, chamaria-se de dia-trinta. 
 
-Um exemplo de um ataque dia-zero que ocorreu no Java da Oracle, permitia aceder remotamente sem a necessidade de se autenticar com o seu username e password. Isto fez com que, por exemplo, esta vulnerabilidade recebe-se o maior valor possível na escala de impacto da Oracle.
+Um exemplo de um ataque dia-zero que ocorreu no Java da Oracle, permitia aceder remotamente sem a necessidade de se autenticar com o seu username e password. Isto fez com que, por exemplo, esta vulnerabilidade recebesse o maior valor possível na escala de impacto da Oracle.
