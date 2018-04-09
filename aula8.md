@@ -27,3 +27,8 @@ O número de vulnerabilidades
 
 
 #### P1.3
+
+As principais diferenças entre vulnerabilidades dia-zero de outro tipo de vulnerabilidades de codificação é o facto de estas, ao contrário da norma que "exige" a sua divulgação pública de forma a que o fornecedor possa corrigir essas falhas, estas são conhecidas apenas a um grupo restrito de pessoas que tem normalmente como objetivo fazer ataques a esse a esse software. Usualmente inserem-se em dois tipos de meios, podendo haver mais, são eles o meio das vendas na dark web por exemplo, ou no meio militar de um país (ciberarmas).
+
+Outra diferença óbvia centra-se claro no próprio nome, uma vulnerabilidade denomina-se de dia-zero por ter sido descoberta nesse dia, enquanto que uma vulnerabilidade que tenha sido descoberta há 30 dias, chamaria-se de dia-trinta. 
+Um exemplo de um ataque dia-zero que ocorreu no Java da Oracle, permitia aceder remotamente sem a necessidade de se autenticar com o seu username e password.
