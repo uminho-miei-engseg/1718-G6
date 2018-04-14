@@ -1,27 +1,20 @@
 # Aula 8
 
 #### P1.1
-
-De seguida mostram-se as linhas de código de cada software:
-
+Através de https://informationisbeautiful.net/visualizations/million-lines-of-code/, seguem-se as linhas de código de cada software:
 1. Linux 3.1 - 15 milhões
 2. Facebook - 61 milhões
 3. Software automóveis - 100 milhões
 4. Google - 2 mil milhões
 
-##### 1.
-
-Através dos números anteriores retiramos o limite inferior e superior de bugs em cada software (
-"Estima-se que qualquer pacote de software tem uma média de 5 a 50 bugs por cada 1000 SLOC"):
-
+**1-** Através dos números anteriores, determinamos os limites (inferior e superior) de bugs para cada tipo de software. Os cálculos sustentam-se na seguinte afirmação *"Estima-se que qualquer pacote de software tem uma média de 5 a 50 bugs por cada 1000 SLOC"*, retirada dos apontamentos teóricos.
 1. Linux 3.1 - 75000 a 750000 bugs
 2. Facebook - 305000 a 3050000 bugs
 3. Software de automóveis - 500000 a 5000000 bugs
 4. Google - 10 a 100 milhões de bugs
 
-##### 2.
-
-O número de vulnerabilidades
+**2-** De uma forma genérica, um bug é um erro/falha num programa que introduz resultados inesperados no seu funcionamento. Independentemente do contexto no qual está inserido, um bug tem uma relação muito forte com o número de linhas de código produzido (embora o número de erros por linhas de código dependa do contexto, daí os limites inferior e superior). Por este motivo, enquanto a relação **SLOC/bugs** é suficientemente forte para nos permitir calcular as estimativas anteriores, no caso **bugs/vulnerabilidades** essa relação é fraca (https://ieeexplore.ieee.org/document/7180086/). Esta fraca relação é reforçada através da resposta (no artigo anterior) à pergunta *Do the source code files with the most bugs also
+have the most vulnerabilities?*, que mostrou que os ficheiros com maior número de bugs originaram poucas vulnerabilidades. Estas dependem do contexto, ou seja, das políticas de segurança adotadas. O mesmo tipo de bug pode originar uma vulnerabilidade num sistema, mas não apresentar qualquer tipo de ameaça às política de segurança impostas noutro.
 
 #### P1.2
 
