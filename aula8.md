@@ -20,17 +20,17 @@ have the most vulnerabilities?*, que mostrou que os ficheiros com maior número 
 
 **Vulnerabilidades de projeto:**
 
-1.	Falta ou falha nos requisitos de autenticação no acesso a funcionalidades ou a dados restritos (CWE-285: Improper Authorization).
+1.	Falta ou falha nos requisitos de autenticação no acesso a funcionalidades ou a dados restritos *(CWE-285: Improper Authorization)*.
 Esta vulnerabilidade permite aos utilizadores acesso a funcionalidade e/ou dados que não estão autorizados a usar ou ver. Esta falha pode levar a vários problemas, como por exemplo exposição de informação, negação de serviço, manipulação de dados, comprometendo a confidencialidade, integridade e controlo de acesso do sistema.
 De modo a resolver estas vulnerabilidades é necessário voltar a fase de planeamento e reavaliar os requisitos de autenticação e acrescentar os que forem necessários.
 
-2.	Falta ou falha nos requisitos de validação de input (CWE-20: Improper Input Validation).
+2.	Falta ou falha nos requisitos de validação de input *(CWE-20: Improper Input Validation)*.
 Neste caso um atacante introduzir um input que o sistema não está preparado para processar, o que pode conduzir a várias situações indesejadas como por exemplo uma alteração no fluxo de controlo, controlo arbitrário de recursos ou a execução de código arbitrário.
 A semelhança do caso anterior é necessária voltar a fase de planeamento para reavaliar os requisitos de validação de input e adicionar mais restrições de modo a tornar o sistema mais seguro.
 
 **Vulnerabilidade de codificação:**
 
-1.	Execução com níveis de privilégios desnecessário (CWE-250: Execution with Unnecessary Privileges).
+1.	Execução com níveis de privilégios desnecessário *(CWE-250: Execution with Unnecessary Privileges)*.
 	Quando são usados privilégios extra, como privilégios de administrador, são expostas vulnerabilidade que estavam inacessíveis, uma vez que com privilégios extra o sistema pode desabilitar certas normas de segurança o que permite que vulnerabilidades já existentes sejam alvo de possíveis ataques.
 	Para solucionar estes problemas é crucial identificar e isolar os casos em que é estritamente necessário a utilização de privilégios extra, verificando sempre que possível se os privilégios estão de acordo com as operações que vão ser executadas, tentando manter os requisitos mínimos para a execução de cada operação.
 
