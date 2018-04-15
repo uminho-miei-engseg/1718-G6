@@ -34,17 +34,17 @@ A semelhança do caso anterior é necessária voltar a fase de planeamento para 
 	Quando são usados privilégios extra, como privilégios de administrador, são expostas vulnerabilidade que estavam inacessíveis, uma vez que com privilégios extra o sistema pode desabilitar certas normas de segurança o que permite que vulnerabilidades já existentes sejam alvo de possíveis ataques.
 	Para solucionar estes problemas é crucial identificar e isolar os casos em que é estritamente necessário a utilização de privilégios extra, verificando sempre que possível se os privilégios estão de acordo com as operações que vão ser executadas, tentando manter os requisitos mínimos para a execução de cada operação.
 
-2.	Utilização de métodos criptográficos que não atingem os requisitos mínimos de segurança (CWE-261: Weak Cryptography for Passwords).
+2.	Utilização de métodos criptográficos que não atingem os requisitos mínimos de segurança *(CWE-261: Weak Cryptography for Passwords)*.
 Ao serem usados métodos criptográficos fracos comprometemos a segurança de todo o sistema. É também importante ter em conta a validade dos métodos, uma vez que estes pode tornar-se obsoletos com o passar do tempo, devido ao avanço tecnológico e a possíveis descoberta de vulnerabilidades.
 Assim sendo é essencial verificar se os métodos garantem os requisitos mínimos de segurança e efetuar as atualizações necessárias para garantir esses mesmos requisitos.
 
 **Vulnerabilidades operacionais:**
 
-1.	Guardar as palavras chave sem serem cifradas (CWE-13: ASP.NET Misconfiguration: Password in Configuration File).
+1.	Guardar as palavras chave sem serem cifradas *(CWE-13: ASP.NET Misconfiguration: Password in Configuration File)*.
 Esta vulnerabilidade é encontrada com mais frequência em ficheiros de configuração, mas aplica-se a todos os casos que impliquem a gravação de palavras chave sem encriptação. Consequentemente, possibilita o acesso a determinados dados ou funcionalidade a qualquer entidade que tenha acesso ao ficheiro de configuração.
 De modo a resolver este problema é necessário cifrar qualquer palavra chave antes de ser gravada em ficheiros.
 
-2.	Acesso a conjunto de ficheiros confidenciais (CWE-548: Information Exposure Through Directory Listing).
+2.	Acesso a conjunto de ficheiros confidenciais *(CWE-548: Information Exposure Through Directory Listing)*.
 Esta vulnerabilidade possibilita o acesso a dados sensíveis, sendo que um atacante pode explorar esta falha e obter dados importantes ou alterar os mesmos.
 Para evitar estas vulnerabilidades é necessário garantir restrições de acesso a estes ficheiros.
 
