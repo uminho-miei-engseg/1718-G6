@@ -5,12 +5,12 @@
 No exemplo apresentado o nível maior de risco por norma estará do lado do PC doméstico. No entanto não havendo informações específicas sobre qualquer um dos sistemas, não conseguiremos precisar com certeza absoluta qual dos dois estará mais vulnerável. Recorrendo à fórmula do risco, ``` risco = probabilidade do ataque ter sucesso * impacto ```, sendo que ``` probabilidade do ataque ter sucesso = nível da ameaça * grau da vulnerabilidade ``` , percebemos que o fator mais controlável por um desenvolvedor de software é o grau de vulnerabilidade, dado que os restantes fatores são um pouco variáveis. 
 Os fatores mais notórios que influenciam este grau são por exemplo:
 - Os mecanismos de controlo aplicados.
-- A existência de vulnerabilidades no design do projeto.
-- O nível de maturidade do software.
+- A existência de vulnerabilidades no *design* do projeto.
+- O nível de maturidade do *software*.
 - A linguagem de programação utilizada.
 - Código fechado em comparação com o código aberto.
 
-No que toca á formúla geral do risco tendo em conta os fatores anteriormente referidos, podemos inequivocamente dizer que o maior grau de impacto se encontra no lado do homebanking de um Banco, pois podem ser afetados milhares ou mesmo milhões de utilizadores, enquanto que no lado do PC doméstico apenas afetará os utilizadores desse mesmo PC.
+No que toca á formúla geral do risco tendo em conta os fatores anteriormente referidos, podemos inequivocamente dizer que o maior grau de impacto se encontra no lado do *homebanking* de um Banco, pois podem ser afetados milhares ou mesmo milhões de utilizadores, enquanto que no lado do PC doméstico apenas afetará os utilizadores desse mesmo PC.
 
 ### Pergunta P1.2
 
