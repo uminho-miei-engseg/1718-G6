@@ -21,3 +21,11 @@ Dada a descoberta e encarceramento dos cibercriminosos que ameaçavam a aplicaç
 #### 2.
 
 Este cenário causaria uma diminuição no fator do grau de vulnerabilidade, alterando consequentemente a probabilidade do ataque ter sucesso, e por consequência a alteração do fator de risco para um valor diferente de R. Também é importante referir que dependendo das vulnerabilidades que forem resolvidas o impacto poderá também mudar assim como o nível da ameaça pois existem vulnerabilidades mais graves do que outras.
+
+### Pergunta P2
+
+#### 1.
+De modo a implementar as normas estabelecidas pelo regulamento europeu RGPD no modelo em cascata, estas têm de ser consideradas na fase de requisitos, de modo a garantir a sua correta aplicação no projeto.
+
+#### 2.
+No caso do modelo *Microsoft Security Development Lifecycle*, dependendo da formação dos membros da equipa de desenvolvimento, pode ser necessário ou não introduzir o regulamento na fase de formação. A semelhança do modelo em cascata é necessário identificar os requisitos de segurança necessários para cumprir o regulamento europeu RGPD, assim sendo na fase de requisitos é essencial ter em linha de conta o regulamento.
