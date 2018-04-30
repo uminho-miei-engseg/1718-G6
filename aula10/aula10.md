@@ -10,20 +10,20 @@ No caso dos programas escritos em java e python, quando a capacidade máxima do 
 
 ### Pergunta P1.4
 
-Apesar de a função *fgets* ser uma versão estável da função *gets*, que não lê mais do que o número passado como argumento (*sizeof buffer* - 100 caracteres), a conversão do valor de retorno (p - *char \* *) para inteiro através da função *atoi* não é segura. Apesar de a função *fgets* limitar a quantidade de caracteres que é possível inserir no buffer (neste caso 100 caracteres), a conversão para valores maiores de 100 produz um buffer overflow.
+A vulnerabilidade do código fornecido consiste na falta de verificação do tamanho do input, ou seja, na aplicação da função *atoi* ao valor de retorno da função *fgets*. Apesar de não ser possível a escrita de caracteres fora dos limites do buffer, é possível introduzir um valor grande como input. A próxima figura mostra o caso em que inserimos o valor *9999*, em que **len = atoi(p)** corresponde ao mesmo que **len = atoi(9999)**. Esta atribuição à variável *len* influencia o último ciclo de impressão, permitindo que sejam imprimidos valores para além daqueles delimitados pelo buffer (como por exemplo, variáveis de ambiente).
 
-![aaa](http://github.com/uminho-miei-engseg/1718-G6/edit/master/aula10/images/1-4.png )
+![Figura 1](https://github.com/uminho-miei-engseg/1718-G6/blob/master/aula10/images/1-4.png )
 
 
 ### Pergunta P1.5
 
-[Alt text](http://github.com/uminho-miei-engseg/1718-G6/edit/master/aula10/images/1-5.png)
+[Alt text](https://github.com/uminho-miei-engseg/1718-G6/blob/master/aula10/images/1-5.png)
 
 
 ### Pergunta P1.6
 
-![alt text](http://github.com/uminho-miei-engseg/1718-G6/edit/master/aula10/images/1-6.png)
+![alt text](https://github.com/uminho-miei-engseg/1718-G6/blob/master/aula10/images/1-6.png)
 
 ### Pergunta P1.7
 
-![alt text](http://github.com/uminho-miei-engseg/1718-G6/edit/master/aula10/images/1-7.png)
+![alt text](https://github.com/uminho-miei-engseg/1718-G6/blob/master/aula10/images/1-7.png)
