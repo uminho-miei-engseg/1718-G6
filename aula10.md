@@ -8,7 +8,11 @@ No caso dos programas escritos em java e python, quando a capacidade máxima do 
 
 ### Pergunta P1.3
 
-### Pergunta P1.4 
+### Pergunta P1.4
+
+Apesar de a função *fgets* ser uma versão estável da função *gets*, que não lê mais do que o número passado como argumento (*sizeof buffer* - 100 caracteres), a conversão do valor de retorno (p - *char \* *) para inteiro através da função *atoi* não é segura. Apesar de a função *fgets* limitar a quantidade de caracteres que é possível inserir no buffer (neste caso 100 caracteres), a conversão para valores maiores de 100 produz um buffer overflow.
+
+
 
 ### Pergunta P1.5
 
