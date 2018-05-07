@@ -34,6 +34,6 @@ int main() {
 
 ![Figura 2](https://github.com/uminho-miei-engseg/1718-G6/blob/master/aula11/imagens/1-3-2.PNG "Figura 2")
 
-3. As funções **malloc** e **memcpy** tratam dos argumentos representativos do tamanho como *size_t*, logo a variável *tamanho_real* não é representada como um número negativo nestas funções. Contudo, esta nova atribuição coloca um valor superior a **2048(MAX_SIZE)** na variável *tamanho_real*. Desta forma, a função **malloc** tenta alocar um número enorme de bytes, provocando erro de *segmentation fault* no programa. Mais especificamente o erro ``` ENOMEM Out of memory. Possibly, the application hit the  RLIMIT_AS  or  RLIMIT_DATA  limit described in getrlimit(2). que mostra que a função não suporta valores tão elevados para alocação de memória. ```
+3. As funções **malloc** e **memcpy** tratam dos argumentos representativos do tamanho como *size_t*, logo a variável *tamanho_real* não é representada como um número negativo nestas funções. Contudo, esta nova atribuição coloca um valor superior a **2048(MAX_SIZE)** na variável *tamanho_real*. Desta forma, a função **malloc** tenta alocar um número enorme de bytes, provocando erro de *segmentation fault* no programa. Mais especificamente o erro ``` ENOMEM Out of memory. Possibly, the application hit the  RLIMIT_AS  or  RLIMIT_DATA  limit described in getrlimit(2). ``` que mostra que a função não suporta valores tão elevados para alocação de memória.
 
 ![Figura 2](https://github.com/uminho-miei-engseg/1718-G6/blob/master/aula11/imagens/1-3-1.PNG "Figura 3")
