@@ -28,7 +28,7 @@ int main() {
 
 ### Pergunta P1.3
 
-1. A vulnerabilidade do programa *erro_sinal.c* consiste na atribuição de uma variável do tipo **size_t** (*tamanho*) a uma variável do tipo **int** (*tamanho_real*). O tipo *size_t* utiliza 8 bytes para representar inteiros positivos, enquanto que o tipo *int* utiliza 4 bytes para representar tanto positivos como negativos. A atribuição ``` tamanho_real = tamanho ```, para valores fora dos limites do tipo *int*, leva a que a variável *tamanho_real* seja representada como sendo um número negativo. Contudo, _não é o facto de o valor ser negativo que leva à terminação prévia do programa_ , como se explica no ponto 3.
+1. A vulnerabilidade do programa *erro_sinal.c* consiste na atribuição de uma variável do tipo **size_t** (*tamanho*) a uma variável do tipo **int** (*tamanho_real*). O tipo *size_t* utiliza 8 bytes para representar inteiros positivos, enquanto que o tipo *int* utiliza 4 bytes para representar tanto positivos como negativos. A atribuição ``` tamanho_real = tamanho ```, para valores fora dos limites do tipo *int*, leva a que a variável *tamanho_real* seja representada como sendo um número negativo. Contudo, não é o facto de o valor ser negativo que leva à terminação prévia do programa, como se explica no ponto 3.
 
 2. 
 
