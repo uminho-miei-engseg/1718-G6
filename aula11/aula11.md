@@ -2,6 +2,18 @@
 
 ### Pergunta P1.1
 
+1. A vulnerabilidade existente na função vulnerável está presente no tipo dos argumentos x e y. Caso sejam passados como argumento, números muito grandes, poderemos ultrapassar o número de bits do size_t fazendo com que sejam convertidos para números menores. Desta forma poderíamos estar então, a escrever em memória não alocada a esta função.
+
+2.
+```C
+int main() {
+	char *matriz;
+	vulneravel(matriz, 670000000,690000000, '150');
+} 
+```
+
+3. Ao executar o programa deparamo-nos com um _segmentation fault_ pois não se consegue alocar a memória pretendida e como tal estaremos a tentar escrever em memória que não foi alocada à função.
+
 ### Pergunta P1.2
 
 
