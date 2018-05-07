@@ -21,5 +21,5 @@
 2. 
 ![Figura 2](https://github.com/uminho-miei-engseg/1718-G6/blob/master/aula11/imagens/1-3-2.PNG "Figura 2")
 
-3. 
+3. As funções **malloc** e **memcpy** tratam dos argumentos representativos do tamanho como *size_t*, logo a variável *tamanho_real* não é representada como um número negativo nestas funções. Contudo, esta nova atribuição coloca um valor superior a 2048(MAX_SIZE) na variável *tamanho_real*. Desta forma, a função **memcpy** ao tentar copiar dados do array *origem* acede a posições de memória não permitidas, levando à terminação do programa com *segmentation fault*.
 ![Figura 2](https://github.com/uminho-miei-engseg/1718-G6/blob/master/aula11/imagens/1-3-1.PNG "Figura 3")
