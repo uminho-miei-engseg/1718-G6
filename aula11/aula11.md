@@ -18,6 +18,8 @@
 
 1. A vulnerabilidade do programa *erro_sinal.c* consiste na atribuição de uma variável do tipo **size_t** (*tamanho*) a uma variável do tipo **int** (*tamanho_real*). O tipo *size_t* utiliza 8 bytes para representar inteiros positivos, enquanto que o tipo *int* utiliza 4 bytes para representar tanto positivos como negativos. A atribuição ``` tamanho_real = tamanho ``` pode provocar overflow na variável *tamanho_real*, tornando-a negativa e terminando a execução do programa.
 
-2. ![Figura 2](https://github.com/uminho-miei-engseg/1718-G6/blob/master/aula11/imagens/1-3-2.PNG "Figura 2")
+2. 
+![Figura 2](https://github.com/uminho-miei-engseg/1718-G6/blob/master/aula11/imagens/1-3-2.PNG "Figura 2")
 
-3. ![Figura 2](https://github.com/uminho-miei-engseg/1718-G6/blob/master/aula11/imagens/1-3-1.PNG "Figura 3")
+3. 
+![Figura 2](https://github.com/uminho-miei-engseg/1718-G6/blob/master/aula11/imagens/1-3-1.PNG "Figura 3")
