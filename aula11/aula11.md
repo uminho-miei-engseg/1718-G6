@@ -28,12 +28,12 @@ int main() {
 
 ### Pergunta P1.3
 
-1. A vulnerabilidade do programa *erro_sinal.c* consiste na atribuição de uma variável do tipo **size_t** (*tamanho*) a uma variável do tipo **int** (*tamanho_real*). O tipo *size_t* utiliza 8 bytes para representar inteiros positivos, enquanto que o tipo *int* utiliza 4 bytes para representar tanto positivos como negativos. A atribuição ``` tamanho_real = tamanho ``` pode provocar overflow na variável *tamanho_real*, tornando-a negativa e terminando a execução do programa.
+1. A vulnerabilidade do programa *erro_sinal.c* consiste na atribuição de uma variável do tipo **size_t** (*tamanho*) a uma variável do tipo **int** (*tamanho_real*). O tipo *size_t* utiliza 8 bytes para representar inteiros positivos, enquanto que o tipo *int* utiliza 4 bytes para representar tanto positivos como negativos. A atribuição ``` tamanho_real = tamanho ```, para valores fora dos limites do tipo *int*, leva a que a variável *tamanho_real* seja representada como sendo um número negativo. Contudo, _não é o facto de o valor ser negativo que leva à terminação prévia do programa_ , como se explica no ponto 3.
 
 2. 
 
 ![Figura 2](https://github.com/uminho-miei-engseg/1718-G6/blob/master/aula11/imagens/1-3-2.PNG "Figura 2")
 
-3. As funções **malloc** e **memcpy** tratam dos argumentos representativos do tamanho como *size_t*, logo a variável *tamanho_real* não é representada como um número negativo nestas funções. Contudo, esta nova atribuição coloca um valor superior a **2048(MAX_SIZE)** na variável *tamanho_real*. Desta forma, a função **malloc** tenta alocar um número enorme de bytes, provocando erro de *segmentation fault* no programa. Mais especificamente o erro ``` ENOMEM Out of memory. Possibly, the application hit the  RLIMIT_AS  or  RLIMIT_DATA  limit described in getrlimit(2). ``` que mostra que a função não suporta valores tão elevados para alocação de memória.
+3. As funções **malloc** e **memcpy** tratam dos argumentos (aqueles referentes ao tamanho) como *size_t*, logo a variável *tamanho_real* não é representada como um número negativo nestas funções. Contudo, esta nova atribuição coloca um valor superior a **2048(MAX_SIZE)** na variável *tamanho_real*. Normalmente, no final da conversão de *size_t* para *int*, os 4 bytes mais à esquerda são truncados. Ou seja, o valor final da variável *tamanho_real* não é tão grande como o original (que provocou overflow) mas é superior a 2048. Desta forma, a função **malloc** tenta alocar um número enorme de bytes, provocando erro de *segmentation fault* no programa. Mais especificamente, podemos obter o erro quando a função não suporta valores tão elevados para alocação de memória (aconteceu na pergunta 1.2 - ``` ENOMEM Out of memory ```) ou podemos obter o erro quando a função **memcpy** tenta copiar dados fora do limite estabelecido (> 2048).
 
 ![Figura 2](https://github.com/uminho-miei-engseg/1718-G6/blob/master/aula11/imagens/1-3-1.PNG "Figura 3")
