@@ -12,6 +12,19 @@
 
 #### Pergunta 2.1 - Reflected XSS
 
+Experimentamos os vários campos de input de modo a encontrar a vulnerabilidade em questão e concluímos o campo do código de acesso é vulnerável à injecção de XSS, como podemos observar na imagem.
+
+![Figura 2](https://github.com/uminho-miei-engseg/1718-G6/blob/master/aula14/imagens/Capturar.PNG "Figura 2")
+
+Ao analisar o código disponibilizado descobrimos que os campos usados para alterar a quantidade dos produtos são convertidos directamente em float, o que impede que a script seja executada pelo programa numa fase mais avançada. 
+
+![Figura 3](https://github.com/uminho-miei-engseg/1718-G6/blob/master/aula14/imagens/Capturar2.PNG "Figura 3")
+
+No caso dos últimos dois campos, estes são convertidos em strings, no entanto, o campo do número do cartão de crédito é processado de modo a eliminar os valores relacionados com código HTML, prevenindo a sua execução.
+
+![Figura 4](https://github.com/uminho-miei-engseg/1718-G6/blob/master/aula14/imagens/Capturar3.PNG "Figura 4")
+
+
 ### 3. Quebra na Autenticação
 
 #### Pergunta 3.1 - Forgot Password
