@@ -18,7 +18,8 @@
 
 **1 -** Após a inserção do username **webgoat** e da resposta **red**, conforme indicado no enunciado do problema, foi devolvida a palavra-chave **webgoat**.
 
-**2 -** Alguns exemplos de utilizadores habituais num sistema podem ser *user, guest, admin, root*. A conta que qualquer atacante gostaria de aceder seria a *admin/root* para possuir privilégios especiais sobre o sistema alvo.
+**2 -** Alguns exemplos de utilizadores habituais num sistema são: *user, guest, admin, root*. A conta que qualquer atacante gostaria de aceder seria a correspondente ao *admin/root* para possuir privilégios especiais sobre o sistema alvo.
 
 **3 -** Uma vez que não temos nenhuma informação sobre outros utilizadores do sistema, a primeira tentativa foi efetuada sobre o username **admin**. Através de força bruta foi possível acertar na pergunta específica do administrador do sistema, como a seguinte imagem mostra.
 
+![Figura 5](https://github.com/uminho-miei-engseg/1718-G6/blob/master/aula14/imagens/forgot_password.png "Figura 5")
